@@ -1,0 +1,18 @@
+.block {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+}
+
+.separator {
+    clear: both;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
