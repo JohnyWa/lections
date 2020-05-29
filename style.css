@@ -1,0 +1,19 @@
+.product-card {
+    width: 450px;
+    display: flex;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.product-card__info-box {
+    margin-left: 15px;
+}
+
+.product-card__img-box {
+    width: 150px;
+}
+
+.product-card__img {
+    display: block;
+    width: 100%;
+}
