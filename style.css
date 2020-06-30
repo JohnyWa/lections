@@ -1,0 +1,13 @@
+.user-container {
+    width: 400px;
+    border: 1px solid gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-container__address {
+    text-align: center;
+}
