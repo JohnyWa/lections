@@ -1,33 +1,79 @@
-#main-form {
-    border: 2px solid gray;
+#lvl-1 {
+    background-color: orange;
+}
+
+#lvl-2 {
+    background-color: green;
+}
+
+#lvl-3 {
+    background-color: aqua;
+}
+
+#lvl-4 {
+    background-color: darkred;
+}
+
+.cont {
     padding: 20px;
-    width: 200px;
 }
 
-.form-item {
+#delegation-box {
+    width: 250px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.del-item {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.through-text {
+    text-decoration: line-through;
+    background-color: black;
+    color: white;
+}
+
+#gallery-box {
+    width: 500px;
+}
+
+#main-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
+}
+
+#gallery-line {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
-#main-box {
-    display: flex;
-    align-items: center;
+.link-item {
+    width: 50px;
 }
 
-.btn {
-    margin-left: 5px;
+.min-img {
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.hideMenu {
-    visibility: hidden;
+.active-img {
+    border: 2px solid orange
 }
 
-.btn span {
-    display: block;
-    height: 1px;
-    width: 15px;
-    background: gray;
-    margin-bottom: 5px;
+.main-img-box {
+    width: 350px;
+}
+
+.main-img {
+    width: 100%;
 }
