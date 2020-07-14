@@ -1,0 +1,30 @@
+{
+  "name": "lections",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnyWa/lections.git"
+  },
+  "keywords": [],
+  "author": "Elon <Elon@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnyWa/lections/issues"
+  },
+  "homepage": "https://github.com/JohnyWa/lections#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "lodash": "^4.17.19"
+  },
+  "dependencies": {
+    "validator": "^13.1.1"
+  }
+}
