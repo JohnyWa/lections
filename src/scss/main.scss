@@ -1,0 +1,11 @@
+h1 {
+  color: white;
+}
+
+.img-box {
+  width: 500px;
+
+  &__img {
+    width: 100%;
+  }
+}
