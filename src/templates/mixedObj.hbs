@@ -1,0 +1,11 @@
+{{#with this}}
+    <div class="{{#if isLight}}light{{/if}}">{{name}}</div>
+    <ul class="items-box">
+        {{#each data}}
+            <li class="single__item">{{this}}</li>
+        {{/each}}
+    </ul>
+    {{#if isLight}}
+        <h2>Light!!!!!</h2>
+    {{/if}}
+{{/with}}
