@@ -1,8 +1,8 @@
 // JS
-import './js/json';
-import './js/webApi';
-import './js/tryCatch';
-import './js/hbs';
+// import './js/eventContext';
+// import './js/customModule';
+// import './js/datePicker';
+// import './js/classes';
 
 // Styles
 import './styles.scss';
