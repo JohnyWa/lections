@@ -1,7 +1,5 @@
 // JS
-import './js/timer';
-import './js/sync&async';
-import './js/date';
+import './js/promise';
 
 // Styles
 import './styles.scss';

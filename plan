@@ -1,4 +1,4 @@
-- Введение в асинхронный JavaScript
-- Методы: setTimeout, setInterval
-- Встроенный объект Date
-- Пишем таймер
+- Promise API: then, catch, finally
+- Promise.all, Promise.race и Promise.finally
+- Promise.resolve и Promise.reject
+- Промисификация функций
