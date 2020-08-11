@@ -37,6 +37,10 @@ module.exports = {
         loader: 'html-loader',
       },
       {
+        test: /\.hbs$/,
+        use: 'handlebars-loader',
+      },
+      {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {

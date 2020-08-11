@@ -1,4 +1,6 @@
-- Promise API: then, catch, finally
-- Promise.all, Promise.race и Promise.finally
-- Promise.resolve и Promise.reject
-- Промисификация функций
+- Протоколы передачи данных: HTTP(S)
+- HTTP-методы, заголовки, MIME-типы,
+- Основы REST: пути к ресурсам, коды ответов
+- fetch API и работа с публичным API
+- CORS и Proxy
+
