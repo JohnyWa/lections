@@ -1,0 +1,21 @@
+#news-container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.loader {
+  width: 32px;
+  height: 32px;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

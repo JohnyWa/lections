@@ -1,6 +1,5 @@
 // JS
-import './js/examples';
-import './js/apiExample';
+import './js/main';
 
 // Styles
 import './styles.scss';
