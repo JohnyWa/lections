@@ -1,5 +1,5 @@
 // JS
-import './js/main';
+import './js/crud';
 
 // Styles
 import './styles.scss';
