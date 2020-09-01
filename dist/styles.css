@@ -1,0 +1,52 @@
+#input-box {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+#input-id {
+    width: 500px;
+}
+
+#send-btn {
+    width: 200px;
+    margin-left: 15px;
+}
+
+#list-box-id {
+    list-style: none;
+    width: 800px;
+}
+
+.time-box {
+    font-size: 11px;
+    color: gray;
+    padding-bottom: 50px;
+}
+
+.list-item {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    max-width: 300px;
+    margin-bottom: 15px;
+    background-color: lightskyblue;
+}
+
+.own-message {
+    background-color: bisque;
+    margin-left: auto;
+}
