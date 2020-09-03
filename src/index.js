@@ -1,5 +1,5 @@
 // JS
-import './js/main';
+import './js/infiniteScroll';
 
 // Styles
 import './styles.scss';
