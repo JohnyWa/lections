@@ -1,31 +1,41 @@
-//-------------------------------------//
-// hack CodePen to load pens as pages
-const InfiniteScroll = require('infinite-scroll');
-var nextPenSlugs = [
-  '3d9a3b8092ebcf9bc4a72672b81df1ac',
-  '2cde50c59ea73c47aec5bd26343ce287',
-  'd83110c5f71ea23ba5800b6b1a4a95c4',
-];
+import $ from 'jquery';
 
-function getPenPath() {
-  var slug = nextPenSlugs[ this.loadCount ];
-  if ( slug ) {
-    return 'https://s.codepen.io/desandro/debug/' + slug;
-  }
-}
+// Get an API key for your demos at https://unsplash.com/developers
+const unsplashID = '9ad80b14098bcead9c7de952435e937cc3723ae61084ba8e729adb642daf0251';
 
-//-------------------------------------//
-// init Infinte Scroll
-
-var infScroll = new InfiniteScroll( '.container', {
-  path: getPenPath,
-  append: '.post',
-  history: false,
+const $container = new InfiniteScroll( '.container', {
+  path: function() {
+    return 'https://api.unsplash.com/photos?client_id='
+      + unsplashID + '&page=' + this.pageIndex;
+  },
+  // load response as flat text
+  responseType: 'text',
   status: '.page-load-status',
+  history: false,
 });
 
-var statusBar = document.querySelector('.status-bar');
 
-infScroll.on( 'load', function() {
-  statusBar.textContent = infScroll.loadCount + ' pages loaded';
+$container.on( 'load', function( response ) {
+  // parse response into JSON data
+  const data = JSON.parse( response );
+  // compile data into HTML
+  const itemsHTML = data.map( htmlBuilder ).join('');
+  // convert HTML string into elements
+  const $items =  $( itemsHTML );
+  // append item elements
+  $container.appendItems($items);
 });
+
+// load initial page
+$container.loadNextPage();
+
+const htmlBuilder = ({ urls: { regular }, user: {name, links: {html}}} ) => {
+  return `
+    <div class="photo-item">
+        <img class="photo-item__image" src="${regular}" alt="Photo by ${name}" />
+        <p class="photo-item__caption">
+            <a href="${html}">${name}</a>
+        </p>
+    </div>
+  `;
+};

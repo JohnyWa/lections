@@ -2,56 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Module 12 Lesson 2</title>
-    <style></style>
+    <title>Module 14 Lesson 2</title>
 </head>
 <body>
-<div class="status-bar">0 pages loaded</div>
 
-<h1>Infinite Scroll - loadCount, vanilla JS</h1>
+<h1 id="h1">TEst</h1>
 
-<div class="container">
-    <article class="post">
-        <h1>1a - Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique mauris nec sapien efficitur, sit amet varius est interdum. Curabitur quis sem felis. Curabitur at quam sit amet mi tempor tristique quis in lorem. Cras id felis sit amet erat accumsan ornare.</p>
-        <p><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange-tree" /></p>
-        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-        <p>Nullam vel odio nec turpis consequat iaculis at ut nibh. Nulla interdum lacus vitae sapien porttitor congue sagittis ac felis.Curabitur in ligula porttitor, varius purus sed, elementum nibh. Nunc ut libero posuere.</p>
-    </article>
-    <article class="post">
-        <h1>1b - Ullamcorper quam at</h1>
-        <p>Ullamcorper quam at, hendrerit eros. Mauris quis vehicula enim.</p>
-        <p><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose"></p>
-        <p>Duis elementum nisi tortor, ut elementum quam mattis condimentum. Aenean vitae massa sit amet ligula sollicitudin venenatis. Praesent ultrices laoreet hendrerit. Duis tempus ullamcorper enim, ac volutpat augue faucibus sit amet.</p>
-        <p>Donec at consequat elit. Suspendisse dignissim ante vitae urna rutrum cursus. Morbi finibus semper facilisis. In varius sem ut turpis molestie volutpat. Duis ut posuere est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada placerat luctus. In eget feugiat sapien. Sed gravida ultrices accumsan.</p>
-        <p>In nec ex at mi scelerisque malesuada.</p>
-        <p>Nullam arcu diam, mollis sit amet condimentum et, finibus in ex. Morbi bibendum magna vel tortor fringilla efficitur. Aliquam sed lectus lacus.</p>
-    </article>
-    <article class="post">
-        <h1>1c - Orci varius natoque penatibus et magnis dis parturient montes</h1>
-        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In varius turpis ipsum, et porta eros eleifend ullamcorper. Sed arcu nisl, rhoncus porta fermentum in, eleifend non dolor.</p>
-        <p>Mauris sagittis a lectus eu fringilla. Maecenas varius cursus aliquam.</p>
-        <p>Suspendisse maximus congue augue eu venenatis. Aliquam urna purus, suscipit ut purus vel, iaculis rhoncus nulla. Donec a velit elementum, pellentesque metus blandit, lacinia erat. Fusce pulvinar mattis erat ac efficitur. Pellentesque aliquam eleifend ligula, eu ullamcorper elit pretium sit amet.</p>
-        <p>Praesent placerat eros sem, vel pretium libero pharetra nec. Morbi hendrerit eleifend commodo. Morbi sodales nunc purus, consequat eleifend nulla dignissim non.</p>
-    </article>
-    <article class="post">
-        <h1>1d - Donec a urna in turpis maximus</h1>
-        <p>Donec a urna in turpis maximus faucibus a nec mauris.</p>
-        <p>Donec iaculis, justo a egestas venenatis, dui nisl faucibus urna, sit amet condimentum quam dui ut libero. Etiam aliquet urna quis nisi aliquam, vitae tincidunt est feugiat.</p>
-        <p>Integer viverra at arcu quis faucibus. Praesent nec venenatis odio. Donec non mattis massa, quis vestibulum leo. Etiam eleifend diam ac magna egestas aliquam. Sed vulputate risus eget efficitur auctor. Mauris aliquam ac purus at semper. Praesent vulputate hendrerit eros, vitae semper turpis venenatis et. Proin et est felis. Etiam sem risus, elementum id cursus quis, laoreet quis orci. Cras eget fermentum lorem, vitae pharetra augue. Etiam tincidunt nulla faucibus, egestas lacus sed, semper metus.</p>
-    </article>
+<div class="container-box">
+    <button id="btn-id">Click!!!</button>
 </div>
 
-<div class="page-load-status">
-    <div class="loader-ellips infinite-scroll-request">
-        <span class="loader-ellips__dot"></span>
-        <span class="loader-ellips__dot"></span>
-        <span class="loader-ellips__dot"></span>
-        <span class="loader-ellips__dot"></span>
-    </div>
-    <p class="infinite-scroll-last">End of content</p>
-    <p class="infinite-scroll-error">No more pages to load</p>
-</div>
+
+<!--TODO: Embla Carousel -->
+    <!-- Embla -->
+<!--    <div class="embla">-->
+<!--        <div class="embla__viewport">-->
+<!--            <div class="embla__container">-->
+
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Buttons &ndash;&gt;-->
+<!--        <button class="embla__button embla__button&#45;&#45;prev" type="button">-->
+<!--            <svg-->
+<!--                    class="embla__button__svg"-->
+<!--                    viewBox="137.718 -1.001 366.563 643.999"-->
+<!--            >-->
+<!--                <path-->
+<!--                        d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z"-->
+<!--                ></path>-->
+<!--            </svg>-->
+<!--        </button>-->
+<!--        <button class="embla__button embla__button&#45;&#45;next" type="button">-->
+<!--            <svg class="embla__button__svg" viewBox="0 0 238.003 238.003">-->
+<!--                <path-->
+<!--                        d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z"-->
+<!--                ></path>-->
+<!--            </svg>-->
+<!--        </button>-->
+<!--    </div>-->
+
+
+
+<!--<h1>Infinite Scroll - Loading JSON</h1>-->
+
+<!--<p>Loading photos from the <a href="https://unsplash.com/developers?utm_source=infinite-scroll-demos&utm_medium=referral&utm_campaign=api-credit">Unsplash API</a></p>-->
+
+<!--<div class="container"></div>-->
+
+<!--<div class="page-load-status">-->
+<!--    <div class="loader-ellips infinite-scroll-request">-->
+<!--        <span class="loader-ellips__dot"></span>-->
+<!--        <span class="loader-ellips__dot"></span>-->
+<!--        <span class="loader-ellips__dot"></span>-->
+<!--        <span class="loader-ellips__dot"></span>-->
+<!--    </div>-->
+<!--    <p class="infinite-scroll-last">End of content</p>-->
+<!--    <p class="infinite-scroll-error">No more pages to load</p>-->
+<!--</div>-->
+
+<!--<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>-->
+
 </body>
 </html>
 </html>
